@@ -1,0 +1,127 @@
+body  
+{   
+    background-color:#ffffff;
+    margin: -21px 0 0 0; 
+    width: 100%;
+   
+}
+.title-main{
+  text-align: center;
+  background-color: #03b5d2;
+  padding-bottom: 5px !important;
+}
+.title-main h2{
+  padding-top: 10px;
+  
+}
+.mainsection{
+  padding:0 100px;
+}
+.sort{
+  text-align: right;
+  padding:20px 0px 20px;
+  cursor: pointer;
+}
+.sort:hover{
+ color: #03b5d2;
+}
+
+
+.faq .faq-item {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding:15px 20px;
+  margin-top:8px;
+  border-radius:2px;
+}
+.faq h2 {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  color: #333333;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  padding:0px;
+  line-height:25px;
+  margin:0px;
+}
+.faq h2:hover, .faq h2:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.faq h2:hover::after, .faq h2:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.faq h2 .faq-title {
+  padding: 1em 1.5em 1em 0;
+}
+.faq h2 .icon {
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+}
+.faq h2 .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.faq h2 .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.faq h2[aria-expanded=true] {
+  color: #03b5d2;
+}
+.faq h2[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.faq h2[aria-expanded=true] + .faq-content {
+  opacity: 1;
+  max-height: 5000px;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.faq .faq-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.faq .faq-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0px;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.left{
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+}
+.votetxt{
+  font-weight: 700px;
+  font-size: small;
+  padding: 1px;
+  border: 1px #33333370 solid;
+}
