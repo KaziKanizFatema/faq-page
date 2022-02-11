@@ -76,7 +76,7 @@ function showAll() {
        ><span class="icon" aria-hidden="true"></span>
        <div class="left">
        <span class="count">${faqs[i].count}</span>
-       <span onclick="markUsefull(${faqs[i].id})" class="votetxt">VOTE
+       <span onclick="markUseful(${faqs[i].id})" class="votetxt">VOTE
        </span></div>
      </h2>
      <div class="faq-content">
@@ -96,7 +96,7 @@ function toggleFaq(e) {
     e.setAttribute('aria-expanded', 'false');
   }
 }
-function markUsefull(faqID) {
+function markUseful(faqID) {
   var faq = faqs.find((x) => x.id == faqID);
   faq.count++;
   showAll();
